@@ -1,0 +1,21 @@
+﻿<Window x:Class="BioFrequencia.Cadastro"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BioFrequencia"
+        mc:Ignorable="d"
+        Title="Cadastro" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Margin="335,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="180,153,0,0" TextWrapping="Wrap" Text="Nome:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtSenha" HorizontalAlignment="Left" Margin="335,300,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Margin="335,235,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="180,302,0,0" TextWrapping="Wrap" Text="Senha" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="180,228,0,0" TextWrapping="Wrap" Text="Email:" VerticalAlignment="Top"/>
+        <Button x:Name="btnCadastrar" Content="Cadastrar" HorizontalAlignment="Left" Margin="355,378,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.374,3.257" Click="btnCadastrar_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="179,344,0,0" TextWrapping="Wrap" Text="Repita a senha" VerticalAlignment="Top" RenderTransformOrigin="0.433,3.449"/>
+        <TextBox x:Name="txtRepSenha" HorizontalAlignment="Left" Margin="335,339,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>
