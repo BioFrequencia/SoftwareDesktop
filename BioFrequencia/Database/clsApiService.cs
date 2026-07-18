@@ -29,7 +29,7 @@ namespace BioFrequencia.Database
         }
 
 
-        public async Task<ApiResponse<clsCoordenacao>> VerificarEmailExiste(string email)
+        public async Task<ApiResponse<clsCoordenacao>> EmailExiste(string email)
         {
             try
             {

@@ -42,7 +42,7 @@ namespace BioFrequencia
                 return;
             }
 
-            var existe = await api.VerificarEmailExiste(txtEmail.Text);
+            var existe = await api.EmailExiste(txtEmail.Text);
             if (existe.Dados != null)
             {
                 MessageBox.Show("Usuário já cadastrado!");
