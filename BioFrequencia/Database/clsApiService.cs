@@ -66,5 +66,23 @@ namespace BioFrequencia.Database
                 return new ApiResponse<clsCoordenacao> { Sucesso = false, Mensagem = "Falha de conexão: " + ex.Message };
             }
         }
+
+        public async Task<ApiResponse<Student>> RegisterStudent(string nome, string sala, string nasc, string genero)
+        {
+            var student = new { nome, sala, nasc, genero };
+            try
+            {
+                var response = await clsConexao.conexao.PostAsJsonAsync("user/addaluno.php", student);
+                if (response.IsSuccessStatusCode)
+                {
+                    return await response.Content.ReadFromJsonAsync<ApiResponse<Student>>();
+                }
+                return new ApiResponse<Student> { Sucesso = false, Mensagem = $"Erro na API ({(int)response.StatusCode})" };
+            }
+            catch (Exception ex)
+            {
+                return new ApiResponse<Student> { Sucesso = false, Mensagem = "Falha de conexão: " + ex.Message };
+            }
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BioFrequencia.Windows;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -25,6 +26,12 @@ namespace BioFrequencia
         private void btnVoltar_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
+        }
+
+        private void btnStudent_Click(object sender, RoutedEventArgs e)
+        {
+            Student student = new Student();
+            student.Show();
         }
     }
 }
