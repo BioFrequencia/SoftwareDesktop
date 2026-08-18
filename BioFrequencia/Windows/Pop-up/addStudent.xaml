@@ -1,0 +1,21 @@
+﻿<Window x:Class="BioFrequencia.Windows.Pop_up.addStudent"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BioFrequencia.Windows.Pop_up"
+        mc:Ignorable="d"
+        Title="addStudent" Height="450" Width="800">
+    <Grid RenderTransformOrigin="0.524,0.583">
+        <Label Content="Nome" HorizontalAlignment="Left" Margin="154,82,0,0" VerticalAlignment="Top"/>
+        <Label Content="Sala" HorizontalAlignment="Left" Margin="154,142,0,0" VerticalAlignment="Top"/>
+        <Label Content="Nasc" HorizontalAlignment="Left" Margin="154,191,0,0" VerticalAlignment="Top"/>
+        <Label Content="Gênero" HorizontalAlignment="Left" Margin="141,332,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNameStudent" HorizontalAlignment="Left" Margin="232,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtClassroom" HorizontalAlignment="Left" Margin="232,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <RadioButton x:Name="rdbF" Content="Feminino" HorizontalAlignment="Left" Margin="332,338,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rdbM" Content="Masculino" HorizontalAlignment="Left" Margin="219,338,0,0" VerticalAlignment="Top"/>
+        <Calendar x:Name="dtpDateOfBirth" HorizontalAlignment="Left" Margin="216,179,0,0" VerticalAlignment="Top" Height="154" Width="184" ScrollViewer.HorizontalScrollBarVisibility="Hidden"/>
+        <Button x:Name="btnRegisterStudent" Content="Cadastrar" HorizontalAlignment="Left" Margin="268,389,0,0" VerticalAlignment="Top" Click="btnRegisterStudent_Click"/>
+    </Grid>
+</Window>
